@@ -1,0 +1,11 @@
+scipy
+jsonToCsv
+ibm-db
+pymongo
+web-py
+Pandas
+numpy
+matplotlib
+scikit-learn
+seaborn
+ray
