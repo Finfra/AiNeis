@@ -21,6 +21,13 @@ else
         wget https://bootstrap.pypa.io/get-pip.py -O $prgs_path/get-pip.py
         python3.7 $prgs_path/get-pip.py
 fi
+
+# Mysql Client
+wget https://dev.mysql.com/get/mysql80-community-release-el7-7.noarch.rpm
+rpm -Uvh mysql80-community-release-el7-7.noarch.rpm
+yum install -y mysql-community-devel.x86_64
+
+# Pip install
 pip install --upgrade pip
 cat >requirements.txt <<EOF
 scipy
@@ -36,8 +43,10 @@ seaborn
 ray
 h5py
 pillow
+mysqlclient
+PyMySQL
 EOF
-#pip install -r requirements.txt --root-user-action=ignore
+pip3.7 install -r requirements.txt --root-user-action=ignore
 
 
 
