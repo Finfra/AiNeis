@@ -27,6 +27,11 @@ wget https://dev.mysql.com/get/mysql80-community-release-el7-7.noarch.rpm
 rpm -Uvh mysql80-community-release-el7-7.noarch.rpm
 yum install -y mysql-community-devel.x86_64
 
+# Kafka Client
+yum install -y libsasl2-dev
+yum install -y cyrus-sasl-devel
+yum install -y cyrus-sasl-gssapi
+
 # Pip install
 pip install --upgrade pip
 cat >requirements.txt <<EOF
