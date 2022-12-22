@@ -46,6 +46,14 @@ pillow
 mysqlclient
 PyMySQL
 tqdm
+impyla
+PyHive
+sasl
+thrift
+thrift-sasl
+thriftpy
+thriftpy2
+kafka-python
 EOF
 pip3.7 install -r requirements.txt --root-user-action=ignore
 pip3.7 install git+https://git@github.com/SKTBrain/KoBERT.git@master
