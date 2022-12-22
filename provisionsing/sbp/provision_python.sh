@@ -45,9 +45,10 @@ h5py
 pillow
 mysqlclient
 PyMySQL
+tqdm
 EOF
 pip3.7 install -r requirements.txt --root-user-action=ignore
-
+pip3.7 install git+https://git@github.com/SKTBrain/KoBERT.git@master
 
 
 
